@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    height: 60vh;
+    background: black;
+    position: relative;
+}
+
+.ball-wrapper{
+    position: absolute;
+    bottom: 0;
+
+    animation: moveX 4s linear infinite;
+}
+
+.ball{
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+
+    animation: bounceY 0.8s ease-in-out infinite;
+}
+
+@keyframes moveX{
+    from{
+        left: 0;
+    }
+    to{
+        left: calc(100% - 50px);
+    }
+}
+
+@keyframes bounceY{
+    0%,100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-200px);
+    }
+}
