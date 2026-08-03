@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 79px;
+
+  background-color: black;
+}
+.grp-nav-links-nav-btn{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.grp-nav-links-nav-btn span{
+  color: gray;
+  font-size: 17px;
+  margin: 0px 4px;
+  opacity: 0.6;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+.logo img{
+  width: 20px;
+}
+.logo span{
+  color: white;
+  font-size: 24px;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links li a{
+  
+  font-size: 16px;
+  color: gray;
+  text-decoration: none;
+}
+.nav-btn{
+  display: flex;
+  gap: 20px;
+}
+.nav-btn button:nth-child(1){
+  color: gray;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}
+.nav-btn button:nth-child(2){
+  color: black;
+  background-color: rgb(221, 217, 217);
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+.partition{
+  border: 0.1px solid gray;
+  opacity: 0.5;
+}
+.herosection{
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  margin-top:100px ;
+  padding:80px 0px 0px 80px;
+  gap: 30px;
+}
+.herosection h1{
+  color: white;
+  font-size: 60px;
+}
+.herosection p{
+  color: white;
+}
